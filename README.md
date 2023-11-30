@@ -1,8 +1,12 @@
 # Continual Prompted Transformer for Test-Time Training (CPT4)
 
-Adapting machine learning models to non-stationary environments presents a significant challenge due to the evolving domain shifts over time. Test-time adaptation (TTA) methods aim to address this challenge by leveraging pre-trained models on source data to make predictions on diverse target data domains, adapting the model using unlabeled target data. However, real-world scenarios often involve continual shifts in target data domains during testing, introducing complexities related to ongoing adaptation and the potential propagation of errors.
+Adapting machine learning models to non-stationary environments presents a significant challenge due to the evolving domain shifts over time. Test-time adaptation (TTA) methods aim to address this challenge by leveraging pre-trained models on source data to make predictions on diverse target data domains, and adapting the model using unlabeled target data. However, real-world scenarios often involve continual shifts in target data domains during testing, introducing complexities related to ongoing adaptation and the potential propagation of errors.
 
 While earlier TTA methods were primarily focused on convolutional-based models, this repository introduces an innovative transformer-based approach to tackle the challenges associated with TTA, especially in non-stationary environments. We present a novel method, named Continual Prompted Transformer for Test-Time Training (CPT4), designed to enhance the Vision Transformer (ViT) model. CPT4 incorporates shared prompts (small learnable parameters) and a batch normalization module, aiming to mitigate catastrophic forgetting and effectively handle domain shifts.
+
+<p align="center">
+<img src="https://github.com/mahan66/cpt4/blob/main/cpt4_prompted_batchNormed_vit.png" alt="CPT4 Block Diagram" width="80%"/>
+<p>
 
 ## Key Features
 
