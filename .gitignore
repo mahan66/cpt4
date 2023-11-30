@@ -1,0 +1,8 @@
+.idea/
+__pycache__/
+configs/__pycache__/
+data/
+pretrained-models/
+myenv/
+nohup.out
+local_datasets/
